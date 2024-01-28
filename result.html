@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URL Shortened</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            font-family: 'Courier New', monospace;
+            background: linear-gradient(45deg, #77A1D3, #E684AE, #79CBCA, #DBD4B4, #7AA1D2);
+            background-size: 400% 400%;
+            animation: gradient 5s ease infinite;
+        }
+
+        h1, p {
+            color: black;
+            text-align: center;
+        }
+
+        a {
+            color: #fff;
+            text-decoration: underline;
+        }
+
+        /* Additional styling */
+        h1 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.2em;
+            margin-top: 10px;
+        }
+
+        @keyframes gradient {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>URL Shortened Successfully!</h1>
+    <p>Your URL has been shortened: <a href="{{ url_for('redirect_to_original', alias=alias) }}">{{ url_for('redirect_to_original', alias=alias) }}</a></p>
+</body>
+</html>
