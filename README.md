@@ -1,40 +1,34 @@
 # URL-Shortening-Flask
 
-URL Shortener
-This is a simple URL shortener web application built using Flask, a lightweight Python web framework. The application allows users to shorten long URLs and provides a custom alias feature. The shortened URLs are then redirected to the original long URLs.
+Flask URL Shortener
+A simple URL shortener built with Flask, enabling users to create shortened versions of long URLs. This lightweight web application supports custom aliases and redirects users seamlessly to the original URLs. Easy to set up and use.
 
-Features
-Shortening URLs: Users can input a long URL and optionally provide a custom alias.
-Custom Alias: Users can choose a custom alias for their shortened URL.
-Random Alias: If no custom alias is provided, a random 6-character alphanumeric alias is generated.
-Redirects: Shortened URLs redirect to the original long URLs.
-Error Handling: If an alias is not found, a "Not Found" page is displayed.
 Usage
-Clone the repository:
+Clone Repository:
 
-
-Install the required dependencies:
+bash
+Copy code
+git clone https://github.com/your-username/url-shortener.git
+Install Dependencies:
 
 bash
 Copy code
 pip install -r requirements.txt
-Run the application:
+Run Application:
 
 bash
 Copy code
 python app.py
-The application will run on http://localhost:5000/.
+Access the application at http://localhost:5000/.
 
-How to Shorten a URL
-Access the application in your web browser.
-Enter the long URL in the provided input field on the homepage.
-Optionally, provide a custom alias for your URL.
-Click the "Shorten" button.
-The result page will display the shortened URL or the chosen custom alias.
-
-Redirecting Shortened URLs
-Access the shortened URL using the provided alias in the address bar of your browser. If the alias is valid, you will be redirected to the original long URL.
+Shortening URLs
+Enter a long URL on the homepage.
+Optionally, provide a custom alias.
+Click "Shorten" to receive a shortened URL.
+Redirecting Short URLs
+Use the shortened URL with the provided alias for seamless redirection to the original long URL.
 
 Note
-This application is intended for personal or small-scale use.
-The code is basic and can be extended for additional features and security improvements.
+Ideal for personal or small-scale use.
+Extendable for additional features and security enhancements
+
